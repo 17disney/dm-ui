@@ -118,7 +118,6 @@ $height = 68px;
 
 <script>
 import moment from 'moment'
-import Emitter from '@/common/mixins/emitter'
 import SelectDateList from './SelectDateList'
 
 const DATE_FORMAT = 'YYYY-MM-DD'
@@ -129,7 +128,6 @@ export default {
 
   components: { SelectDateList },
 
-  mixins: [Emitter],
 
   props: {
     value: String
