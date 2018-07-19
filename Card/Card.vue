@@ -3,20 +3,33 @@
 
 .dm-card {
   &__header {
-    margin-bottom: 20px;
-    padding-bottom: 30px;
     color: $color-grey;
-    border-bottom: 1px solid $color-light-grey-ss;
 
+    // border-bottom: 1px solid $color-light-grey-ss;
     span {
+      margin-bottom: 20px;
+      padding-bottom: 30px;
       font-size: 17px;
       font-weight: 600;
+    }
+  }
+
+  &--report {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid $color-primary-s;
+    border-radius: 10px;
+
+    .dm-card {
+      &__header {
+        padding-bottom: 10px;
+      }
     }
   }
 }
 </style>
 <template>
-  <div class="dm-card">
+  <div class="dm-card" :class="'dm-card--' + type">
     <div class="dm-card__header">
       <slot name="header"></slot>
     </div>
@@ -30,6 +43,7 @@ export default {
   components: {},
 
   props: {
+    type: String
   },
 
   data() {
