@@ -22,7 +22,6 @@
 
     .dm-card {
       &__header {
-        padding-bottom: 10px;
       }
     }
   }
