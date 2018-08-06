@@ -2,10 +2,19 @@
 @require '../../../styles/disney/var/color.styl';
 
 .dm-card {
+  &--charts {
+    .dm-card {
+      &__header {
+        padding-bottom: 18px;
+        margin-bottom: 18px;
+        border-bottom: 1px solid $color-light-grey-ss;
+      }
+    }
+  }
+
   &__header {
     color: $color-grey;
 
-    // border-bottom: 1px solid $color-light-grey-ss;
     span {
       margin-bottom: 20px;
       padding-bottom: 30px;
