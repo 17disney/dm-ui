@@ -39,8 +39,9 @@ $height = 68px;
     position: absolute;
     width: 100%;
     display: flex;
-    &.active{
-      }
+
+    &.active {
+    }
   }
 
   &__item {
@@ -127,7 +128,6 @@ export default {
   name: 'dm-select-date',
 
   components: { SelectDateList },
-
 
   props: {
     value: String
