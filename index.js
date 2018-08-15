@@ -3,6 +3,7 @@ import Container from './Container'
 import Content from './Content'
 import Header from './Header'
 import Main from './Main'
+import Menu from './Menu'
 import Scroll from './Scroll'
 import SelectDate from './SelectDate'
 
@@ -18,6 +19,7 @@ function install(Vue) {
     Content,
     Header,
     Main,
+    Menu,
     Scroll,
     SelectDate
   ]
