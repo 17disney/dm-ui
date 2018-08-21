@@ -12,7 +12,11 @@
 </template>
 
 <script>
+const NAME = 'dm-menu-item'
+
 export default {
+  name: NAME,
+
   components: {},
 
   props: {
